@@ -1,5 +1,12 @@
+import generico.Utils;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        String nombre;
+
+        Utils.limpiarConsola();
+
+        nombre = Utils.leerString("Digite su nombre: ");
+        System.out.println("Su nombre es: " + nombre);
     }
 }
