@@ -2,7 +2,7 @@ package Semana2;
 
 import generico.Utils;
 
-public class EjercicioPropuesto2 {
+public class EjercicioPropuesto3 {
     public static void main(String[] args) {
     
         //int EdadElena;
