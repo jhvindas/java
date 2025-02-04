@@ -13,6 +13,8 @@ public class EjercicioPropuesto5 {
         //Luis recibe el 30%
         //Hugo recibe el 40%
 
+        Utils.limpiarConsola();
+
         int TotalLimonadas = Utils.leerEntero("Digite la cantidad total de limonadas vendidas: ");
 
         GananciaTotal = TotalLimonadas * limonada;
