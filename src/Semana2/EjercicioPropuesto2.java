@@ -1,11 +1,20 @@
 package Semana2;
 
+import generico.Utils;
+
 public class EjercicioPropuesto2 {
     public static void main(String[] args) {
-        
-        int EdadAna = X + 10;
-        int EdadElena = 
+    
+        //int EdadElena;
+        int EdadAna;
 
+        int EdadElena = Utils.leerEntero("Digite la edad actual de Elena: ");
+
+        EdadAna = EdadElena * 2 + 10;
+
+        Utils.limpiarConsola();
+
+        System.out.println("La edad de Ana dentro de diez años es de: " + EdadAna);
 
     }
 }
