@@ -5,9 +5,9 @@ import generico.Utils;
 public class EjercicioPropuesto5 {
     public static void main(String[] args) {
         
-        int limonada = 10;
+        double limonada = 4.5;
         //double costo = 5.50;
-        double GananciaTotal;
+        double gananciaTotal;
 
         //Paco recibe el 30%
         //Luis recibe el 30%
@@ -15,15 +15,15 @@ public class EjercicioPropuesto5 {
 
         Utils.limpiarConsola();
 
-        int TotalLimonadas = Utils.leerEntero("Digite la cantidad total de limonadas vendidas: ");
+        int totalLimonadas = Utils.leerEntero("Digite la cantidad total de limonadas vendidas: ");
 
-        GananciaTotal = TotalLimonadas * limonada;
+        gananciaTotal = totalLimonadas * limonada;
 
-        double GananciaPaco = GananciaTotal * 0.30;
-        double GananciaLuis = GananciaTotal * 0.30;
-        double GananciaHugo = GananciaTotal * 0.40;
+        double gananciaPaco = gananciaTotal * 0.30;
+        double gananciaLuis = gananciaTotal * 0.30;
+        double gananciaHugo = gananciaTotal * 0.40;
 
-        System.out.println("Las ganancias para Hugo son de " + GananciaHugo + " colones" + " , las ganancias para Paco son de " + GananciaPaco + " colones" + " y las ganancias para Luis son de " + GananciaLuis + " colones");
+        System.out.println("Las ganancias para Hugo son de " + gananciaHugo + " colones" + " , las ganancias para Paco son de " + gananciaPaco + " colones" + " y las ganancias para Luis son de " + gananciaLuis + " colones");
     }
     
 }
