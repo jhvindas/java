@@ -7,14 +7,14 @@ public class EjercicioPropuesto8 {
 
         Utils.limpiarConsola();
         
-        int examen1;
-        int examen2;
-        int examen3;
-        int promedio;
+        double examen1;
+        double examen2;
+        double examen3;
+        double promedio;
 
-        examen1 = Utils.leerEntero("Digite la nota del primer examen: ");
-        examen2 = Utils.leerEntero("Digite la nota del segundo examen: ");
-        examen3 = Utils.leerEntero("Digite la nota del tercer examen: ");
+        examen1 = Utils.leerDoble("Digite la nota del primer examen: ");
+        examen2 = Utils.leerDoble("Digite la nota del segundo examen: ");
+        examen3 = Utils.leerDoble("Digite la nota del tercer examen: ");
 
         promedio = (examen1 + examen2 + examen3) / 3;
 
