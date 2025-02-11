@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Semana3 - EjercicioPropuesto1"/>
+        <attribute name="authors" value="John"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-10 08:01:00 PM"/>
+        <attribute name="created" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0xMDswNzo0MDo1OCBQTTsyNzAy"/>
+        <attribute name="edited" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0xMDswODowMTowMCBQTTsxOzI3OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temperaturaPersona" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite la temperatura de la persona: &quot;" newline="True"/>
+            <input variable="temperaturaPersona"/>
+            <if expression="temperaturaPersona &gt; 37">
+                <then>
+                    <output expression="&quot;La temperatura de la persona es de &quot; &amp; temperaturaPersona &amp; &quot; grados, esto indica que tiene fiebre.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;La temperatura de la persona es de &quot; &amp; temperaturaPersona &amp; &quot; grados, esto indica que no tiene fiebre.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

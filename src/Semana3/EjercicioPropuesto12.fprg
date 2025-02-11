@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Semana3 - EjercicioPropuesto12"/>
+        <attribute name="authors" value="John"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-10 08:19:59 PM"/>
+        <attribute name="created" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0xMDswODowMToxMSBQTTsyNjg5"/>
+        <attribute name="edited" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0xMDswODoxOTo1OSBQTTsxOzI4MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="golesHugo, golesPaco, golesLuis" type="Integer" array="False" size=""/>
+            <declare name="equipoHugo, equipoPacoLuis" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cu&#225;ntos goles anot&#243; Hugo? &quot;" newline="True"/>
+            <input variable="golesHugo"/>
+            <output expression="&quot;Cu&#225;ntos goles anot&#243; Paco? &quot;" newline="True"/>
+            <input variable="golesPaco"/>
+            <output expression="&quot;Cu&#225;ntos goles anot&#243; Luis? &quot;" newline="True"/>
+            <input variable="golesLuis"/>
+            <assign variable="equipoHugo" expression="golesHugo"/>
+            <assign variable="equipoPacoLuis" expression="golesPaco + golesLuis"/>
+            <if expression="equipoHugo &gt; equipoPacoLuis">
+                <then>
+                    <output expression="&quot;El equipo de Hugo es el ganador con un total de &quot; &amp; golesHugo &amp; &quot; goles.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El equipo de Paco y Luis es el ganador con un total de &quot; &amp; equipoPacoLuis &amp; &quot; goles.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
