@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FlowEjercicio5"/>
+        <attribute name="authors" value="John"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-04 08:43:03 PM"/>
+        <attribute name="created" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0wNDswNjowNjoxNSBQTTsyNjk5"/>
+        <attribute name="edited" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0wNDswODo0MzowMyBQTTsxOzI4MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precioLimonada" type="Real" array="False" size=""/>
+            <declare name="cantidadLimonadas" type="Integer" array="False" size=""/>
+            <declare name="totalGanancias" type="Real" array="False" size=""/>
+            <declare name="gananciasPaco, gananciasLuis, gananciasHugo" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite la cantidad de limonadas vendidas: &quot;" newline="True"/>
+            <input variable="cantidadLimonadas"/>
+            <assign variable="precioLimonada" expression="4.50"/>
+            <assign variable="totalGanancias" expression="precioLimonada * cantidadLimonadas"/>
+            <assign variable="gananciasPaco" expression="totalGanancias * 0.30"/>
+            <assign variable="gananciasLuis" expression="totalGanancias * 0.30"/>
+            <assign variable="gananciasHugo" expression="totalGanancias * 0.40"/>
+            <output expression="&quot;Las ganancias de Paco fueron de &quot; &amp; gananciasPaco &amp; &quot;, las ganancias de Luis fueron de &quot; &amp; gananciasLuis &amp; &quot; y las ganancias de Hugo fueron de &quot; &amp; gananciasHugo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
