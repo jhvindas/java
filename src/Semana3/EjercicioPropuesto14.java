@@ -13,6 +13,9 @@ public class EjercicioPropuesto14 {
         double dineroTotalExtras;
         double horasTrabajadas;
 
+        //También puedo definir variables así: double horaEntrada, horaSalida, tarifaHora, horaExtra, horasTrabajadas;
+        //Puedo simplificar dineroTotal y dineroTotalExtras.
+
         horaEntrada = Utils.leerDoble("Digite la hora de entrada: ");
         horaSalida = Utils.leerDoble("Digite la hora de salida: ");
         tarifaHora = Utils.leerDoble("Digite la tarifa que se paga por hora: ");
