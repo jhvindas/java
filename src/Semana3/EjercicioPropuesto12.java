@@ -18,6 +18,9 @@ public class EjercicioPropuesto12 {
         equipoHugo = golesHugo;
         equipoPacoLuis = golesPaco + golesLuis;
 
+
+        // Necesito considerar el hecho de que el partido puede quedar empatado. Ver if anidados.
+
         if (equipoHugo > equipoPacoLuis) {
             System.out.println("El equipo de Hugo hizo " + equipoHugo + " goles, por lo tanto es el ganador.");
         } else {
