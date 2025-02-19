@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="EjercicioPropuesto5"/>
+        <attribute name="authors" value="John"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-13 08:44:45 PM"/>
+        <attribute name="created" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0xMzswODoyNToxMiBQTTsyNjk5"/>
+        <attribute name="edited" value="Sm9objtERVNLVE9QLTNNN1EyTTE7MjAyNS0wMi0xMzswODo0NDo0NSBQTTsxOzI4MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadAproxPiedra" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite la edad de la piedra: &quot;" newline="True"/>
+            <input variable="edadAproxPiedra"/>
+            <if expression="edadAproxPiedra &lt; 65.5">
+                <then>
+                    <output expression="&quot;La piedra pertenece a la era Cenozoica&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edadAproxPiedra &lt; 251">
+                        <then>
+                            <output expression="&quot;La piedra pertenece a la era Mesozoica&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edadAproxPiedra &lt; 542">
+                                <then>
+                                    <output expression="&quot;La piedra pertenece a la era Paleozoica&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="edadAproxPiedra &gt;= 542">
+                                        <then>
+                                            <output expression="&quot;La piedra pertenece a la era Pre-paleozoica&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
