@@ -110,6 +110,31 @@ public class Utils {
     }
 
     /**
+     * Este método permite la lectura de un caracter (texto).
+     * Si el usuario digite más de un caracter, toma el primero.
+     * NO PUEDE LEER ESPACIOS EN BLANCO, DADO QUE LIMPIA TODOS LOS ESPACIOS.
+     * 
+     * @param texto Es el texto utilizado como etiqueta para que el usuario sepa que
+     *              se le solicita.
+     *              Si no desea imprimir una etiqueta, coloque "".
+     * @return char (caracter) digitado por el usuario.
+     */
+    public static char leerCaracter(String texto) {
+        String resultado = null;
+        out.print(texto);
+
+        try {
+            resultado = in.readLine();
+
+        } catch (Exception e) {
+        }
+
+        char salida = resultado.trim().charAt(0);
+
+        return salida;
+    }
+
+    /**
      * Este método leer un boolean (true/false), para esto se hace una pregunta de
      * tipo Si y NO,
      * si el usuario escribe un Si, el sistema devuelve un true, el usuario escoge
@@ -257,26 +282,80 @@ public class Utils {
         return (int) Math.round(Math.random() * n);
     }
 
-    /**
-     * Establece el color del a fuente
-     * @param color Color a establecer la fuente
-     */
-    public static void establecerColor(Color color) {
-        System.out.print(color);
+    public static void establecerColorRojo() {
+        System.out.print("\033[31m");
     }
 
-    public static void establecerFondo(Fondo color) {
-        System.out.print(color);
+    public static void establecerColorVerde() {
+        System.out.print("\033[32m");
     }
 
-    public static void establecerColores(Color color, Fondo fondo) {
-        System.out.print(color.getValor() + fondo.getValor());
+    public static void establecerColorAmarillo() {
+        System.out.print("\033[33m");
     }
 
-    public static void reestablecerColores() {
-        System.out.print(Color.RESET.getValor() + Fondo.NEGRO_BACKGROUND.getValor());
-        System.out.println("");
+    public static void establecerColorAzul() {
+        System.out.print("\033[34m");
     }
+
+    public static void establecerColorMangenta() {
+        System.out.print("\033[35m");
+    }
+
+    public static void establecerColorCian() {
+        System.out.print("\033[36m");
+    }
+
+    public static void establecerColorBlanco() {
+        System.out.print("\033[37m");
+    }
+
+    public static void pausar() {
+        System.out.println("Presione <Enter> para continuar...");
+        try {
+          System.in.read();
+        } catch (Exception e) {
+    
+        }
+      }
+
+    public static void reiniciarColores() {
+        System.out.print("\033[0m");
+    }
+
+    public static void establecerFondoColorBlanco() {
+        System.out.print("\033[47m");
+    }
+
+    public static void establecerFondoColorRojo() {
+        System.out.print("\033[41m");
+    }
+
+    public static void establecerFondoColorVerde() {
+        System.out.print("\033[42m");
+    }
+
+    public static void establecerFondoColorAmarillo() {
+        System.out.print("\033[43m");
+    }
+
+    public static void establecerFondoColorAzul() {
+        System.out.print("\033[44m");
+    }
+
+    public static void establecerFondoColorMangenta() {
+        System.out.print("\033[45m");
+    }
+
+    public static void establecerFondoColorCian() {
+        System.out.print("\033[46m");
+    }
+
+    public static void establecerFondoColorNegro() {
+        System.out.print("\033[40m");
+    }
+
+
 }
 
 enum Fondo {
