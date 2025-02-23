@@ -40,7 +40,7 @@ public class CalculadoraBasica {
 
         //Resultado
         Utils.establecerColorVerde();
-        System.out.println("El resultado es: " + resultado);
+        System.out.printf("El resultado es: " + "%.2f\n", resultado);
         Utils.reiniciarColores();
     }
 }
