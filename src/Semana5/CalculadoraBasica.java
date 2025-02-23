@@ -15,7 +15,6 @@ public class CalculadoraBasica {
         tipoOperador = Utils.leerString("Digite el tipo de operación con el que va a trabajar: (suma, resta, multiplicación o division) ");
         numeroUno = Utils.leerDoble("Digite el primer número a utilizar en la opración: ");
         numeroDos = Utils.leerDoble("Digite el primer número a utilizar en la opración: ");
-        resultado = 0;
 
         //Proceso
         if ("suma".equalsIgnoreCase(tipoOperador)) {
