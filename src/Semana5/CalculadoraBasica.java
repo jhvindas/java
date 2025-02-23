@@ -17,7 +17,7 @@ public class CalculadoraBasica {
         numeroDos = Utils.leerDoble("Digite el primer número a utilizar en la opración: ");
 
         //Proceso
-        if ("suma".equalsIgnoreCase(tipoOperador)) {
+        if ("suma".equalsIgnoreCase(tipoOperador)) { // Evalúa si la variable "tipoOperador" es igual al string "suma", sin importar mayúsculas o minúsculas.
             resultado = numeroUno + numeroDos;
         } else  {
             if ("resta".equalsIgnoreCase(tipoOperador)) {
