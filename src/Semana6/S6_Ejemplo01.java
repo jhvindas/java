@@ -4,7 +4,7 @@ import generico.Utils;
 
 public class S6_Ejemplo01 {
     public static void main(String[] args) {
-        int acumulador = 0, limite, numero, contador;
+        int acumulador = 0, limite, numero/* , contador*/;
         double promedio;
 
         limite = Utils.leerEntero("Digite la cantiada de datos: ");
