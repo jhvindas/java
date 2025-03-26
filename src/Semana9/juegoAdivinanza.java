@@ -1,24 +1,30 @@
-public class AdivinaElNumeroSinImport {
+package Semana9;
+
+import generico.Utils;
+
+public class juegoAdivinanza {
     public static void main(String[] args) {
-        // Generar un número aleatorio entre 1 y 100 usando Math.random()
+        
+        Utils.limpiarConsola();
+        
+        // Generar un número aleatorio entre 1 y 100.
         int numeroAleatorio = (int) (Math.random() * 100) + 1;
 
-        // Configuración inicial
+        // Variables
         int intentosMaximos = 5;
         int intentosRealizados = 0;
         int suposicion = -1;
 
-        // Introducción
-        System.out.println("¡Bienvenido al juego de adivinar el número!");
+        // Intro
+        System.out.println("Bienvenido al juego de adivinar el número!");
         System.out.println("He escogido un número entre 1 y 100.");
         System.out.println("Tienes un máximo de " + intentosMaximos + " intentos para adivinarlo.");
 
-        // Bucle para gestionar los intentos del usuario
+        // Gestion de intentos del usuario
         while (intentosRealizados < intentosMaximos && suposicion != numeroAleatorio) {
-            System.out.print("Introduce tu suposición (escribe un número): ");
 
-            // Leer entrada manualmente sin Scanner
-            suposicion = leerNumeroDesdeTeclado();
+            // Entrada del usuario
+            suposicion = Utils.leerEntero("Introduce tu suposición (escribe un número): ");
 
             intentosRealizados++;
 
@@ -33,29 +39,7 @@ public class AdivinaElNumeroSinImport {
 
         // Mensaje al final del juego
         if (suposicion != numeroAleatorio) {
-            System.out.println("¡Lo siento! Has agotado tus intentos. El número era: " + numeroAleatorio);
+            System.out.println("Lo siento! Se agotaron sus intentos. El número era: " + numeroAleatorio);
         }
-    }
-
-    // Método para leer entrada desde el teclado sin usar Scanner
-    private static int leerNumeroDesdeTeclado() {
-        int numero = 0;
-        try {
-            byte[] buffer = new byte[10]; // Tamaño suficiente para leer un número
-            int leidos = System.in.read(buffer); // Leer entrada
-            numero = convertirAEntero(buffer, leidos); // Convertir bytes a entero
-        } catch (Exception e) {
-            System.out.println("Error al leer la entrada. Por favor, intenta de nuevo.");
-        }
-        return numero;
-    }
-
-    // Convertir entrada en bytes a un número entero
-    private static int convertirAEntero(byte[] buffer, int longitud) {
-        int resultado = 0;
-        for (int i = 0; i < longitud - 1; i++) { // Ignorar el salto de línea
-            resultado = resultado * 10 + (buffer[i] - '0');
-        }
-        return resultado;
     }
 }
