@@ -39,7 +39,7 @@ public class CuotasFijas {
 
             totalIntereses += interes;
 
-            System.out.printf("| %2d | $%.2f | $%.2f | $%.2f | $%.2f |\n", mes, cuotaMensual, amortizacion, interes, saldo);
+            System.out.printf("| %2d | $%.2f | $%.2f     | $%.2f  | $%.2f|\n", mes, cuotaMensual, amortizacion, interes, saldo);
         }
 
         System.out.println("--------------------------------------------------");
@@ -83,7 +83,7 @@ public class CuotasFijas {
     System.out.printf("Total de intereses pagados: %.2f\n", totalInteresessesPagados);
 
     generarTablaAmortizacion(P, r_anual, n);
-
+    
     
     }
 }
