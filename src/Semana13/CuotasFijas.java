@@ -52,11 +52,11 @@ public class CuotasFijas {
             System.out.println("El monto del prestamo debe ser mayor a cero (0)");
             return false;
         }
-        if (r_anual <= 0 || r_anual >= 100) {
+        if (r_anual < 0 || r_anual > 100) {
             System.out.println("La tasa de interes anual debe estar entre 0% y 100%.");
             return false;
         }
-        if (n < 0 || n >= 360) {
+        if (n < 0 || n > 360) {
             System.out.println("El plazo en meses debe ser mayor a cero y no exceder 360 meses.");
             return false;
         }
